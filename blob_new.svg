@@ -3,8 +3,18 @@
         <linearGradient id="gradient">
           <stop style="stop-color: #dddd92"></stop>
         </linearGradient>
+        		<style>
+              .rotate{
+                animation: svgmaskrotate 4s linear 0s infinite normal both;
+                transform-origin: center center;
+              }
+              @keyframes svgmaskrotate{
+                0%{transform: rotate(0deg);}
+                100%{transform: rotate(360deg);}
+              }
+            </style>
       </defs>
-      <path fill="url(#gradient)">
+      <path fill="url(#gradient)" class="rotate">
         <animate attributeName="d" dur="6000ms" repeatCount="indefinite" values="
         M380,341Q309,432,185,409.5Q61,387,65,252.5Q69,118,182,115Q295,112,373,181Q451,250,380,341Z;
         M402.5,347.5Q313,445,205,403Q97,361,78,236Q59,111,193,62.5Q327,14,409.5,132Q492,250,402.5,347.5Z;
